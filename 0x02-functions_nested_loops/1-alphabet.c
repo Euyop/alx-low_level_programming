@@ -1,15 +1,16 @@
 #include "holberton.h"
 /**
- * print_alphabet - prints the english alphabet from a-z.
- * Return: Nothing.
+ * print_alphabet - Print alphabet in lowercase using only `_putchar`
+ * Return: 0
  */
 void print_alphabet(void)
 {
-	char c;
+	char c = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	while (c <= 'z')
 	{
 		_putchar(c);
+		c++;
 	}
 	_putchar('\n');
 }
